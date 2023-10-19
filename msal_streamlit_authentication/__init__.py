@@ -25,7 +25,7 @@ def msal_authentication(
         html_id=None,
         key=None
 ):
-    authenticated_user_profile = _component_func(
+    return _component_func(
         auth=auth,
         cache=cache,
         login_request=login_request,
@@ -35,6 +35,5 @@ def msal_authentication(
         class_name=class_name,
         html_id=html_id,
         default=None,
-        key=key
+        key=key,
     )
-    return authenticated_user_profile
